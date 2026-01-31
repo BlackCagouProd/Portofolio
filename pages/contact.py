@@ -6,7 +6,7 @@ from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.backends import default_backend
 
 def contact_show():
-    st.header("Contactez-moi (Chiffré et Authentifié) 🔒")
+    st.header("Contactez-moi (Chiffré et Authentifié) ")
     
     # Générer ou récupérer les clés RSA
     if 'private_key' not in st.session_state or 'public_key' not in st.session_state:

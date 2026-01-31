@@ -4,26 +4,26 @@ import fitz  # PyMuPDF
 from PIL import Image
 
 def projects_show():
-    st.header("🚀 Mes Projets")
+    st.header(" Mes Projets")
 
     # Tabs pour catégoriser les projets
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "🛡️ Cybersécurité", "💻 Développement", "🎓 Académiques", "🏆 Open Source", "Bénevolat"
+        " Cybersécurité", " Développement", " Académiques", " Open Source", "Bénevolat"
     ])
 
     with tab1:
         col1, col2 = st.columns(2)
         with col1:
-            st.subheader("🔐 Analyseur d'URL")
+            st.subheader(" Analyseur d'URL")
             st.write("""
             - **Objectif :** Identifier les url malvaillante (phishing) 
             - **Outils utilisés :** streamlit,API_virustotal , API_ipqualityscore.
             - **Résultat :** Détection de plusieurs cas utilisation, localisation d' IP
             """)
-            st.link_button("🔗 Voir sur GitHub", "https://github.com/ClemEsaipProject/phishingdataviz")
+            st.link_button(" Voir sur GitHub", "https://github.com/ClemEsaipProject/phishingdataviz")
 
         with col2:
-            st.subheader("🔎 Keylogger Furtif - Étude de Malware")
+            st.subheader(" Keylogger Furtif - Étude de Malware")
             st.write("""
             - **Objectif :** Analyser le comportement d'un malware de type keylogger et développer des méthodes de détection.
             - **Outils :** Python • PyInstaller • Cryptography • Wireshark • Snowflake (pour l'analyse des logs)
@@ -32,34 +32,34 @@ def projects_show():
                 - Reverse engineering de 15+ techniques d'obfuscation
                 - Détection réussie dans 92% des cas via des règles YARA personnalisées
             """)
-            st.link_button("🧑💻 Voir le Code Source", "https://github.com/monprojet")
+            st.link_button(" Voir le Code Source", "https://github.com/monprojet")
 
     with tab2:
         col1, col2,col3 = st.columns(3)
         with col1:
-            st.subheader("🔐 CryptoBC - Projet Blockchain")
+            st.subheader(" CryptoBC - Projet Blockchain")
             st.write("""
             - **Technologies :** Python, Solidity, Web3.js, React, Ganache.
             - **Description :** Une plateforme blockchain complète avec smart contracts, wallet crypto et système de transactions sécurisées.
             - **Fonctionnalités :** Minage de blocs, transactions P2P, interface dashboard analytique.
             """)
-            st.link_button("🔗 Voir sur GitHub", "https://github.com/ClemEsaipProject/CryptoBC")
+            st.link_button(" Voir sur GitHub", "https://github.com/ClemEsaipProject/CryptoBC")
 
         with col2:
-            st.subheader("🌐 EVOD - Calculateur d'empreinte carbone")
+            st.subheader(" EVOD - Calculateur d'empreinte carbone")
             st.write("""
             - **Technologies :** PHP, wordpress.
             - **Description :** creation d'unn plugin calcualteur d'empreinte carbone et du template .
             """)
-            st.link_button("🔗 Voir sur GitHub", "https://github.com/BlackCagouProd/EVOD")
+            st.link_button(" Voir sur GitHub", "https://github.com/BlackCagouProd/EVOD")
 
         with col3:
-            st.subheader("🌐 createur de dataset et apprentissage du LMM pour OCR")
+            st.subheader(" createur de dataset et apprentissage du LMM pour OCR")
             st.write("""
             - **Technologies :** python, streamlit,tensorflow
             - **Description :** creation de dataset en .h5, entrainement et test un LLM et analyse et prediction .
             """)
-            st.link_button("🔗 Voir sur GitHub", "https://github.com/ClemEsaipProject/OCRDIGIT")
+            st.link_button(" Voir sur GitHub", "https://github.com/ClemEsaipProject/OCRDIGIT")
     with tab3:
         PDF_FOLDER = "./assets/pdf/"
 
@@ -85,7 +85,7 @@ def projects_show():
                             pdf_path = os.path.join(PDF_FOLDER, pdf)
 
                             with cols[j]:  # Affichage dans la colonne correspondante
-                                st.subheader(f"📄 {pdf}")
+                                st.subheader(f" {pdf}")
 
                                 # Charger la première page du PDF en image
                                 doc = fitz.open(pdf_path)
@@ -99,7 +99,7 @@ def projects_show():
                                 # Ajouter un bouton de téléchargement
                                 with open(pdf_path, "rb") as file:
                                     st.download_button(
-                                        label="📥 Télécharger",
+                                        label=" Télécharger",
                                         data=file,
                                         file_name=pdf,
                                         mime="application/pdf"
@@ -110,13 +110,13 @@ def projects_show():
     with tab5 :
          col1, col2 = st.columns(2)
          with col1:
-            st.subheader("📌 Maison de quartier des 3 Mâts (2023 - 2024)")
+            st.subheader(" Maison de quartier des 3 Mâts (2023 - 2024)")
             st.markdown("""
             - **Lutte contre l’illectronisme** : Accompagnement des personnes en difficulté avec le numérique.
             - Organisation d’ateliers d’initiation à l’informatique et à l’usage d’Internet.
             """)
          with col2:
-            st.subheader("📌 Maison de quartier de Val-Suzon (2015 - 2019)")
+            st.subheader(" Maison de quartier de Val-Suzon (2015 - 2019)")
             st.markdown("""
             - **Animateur multimédia** : Formation des habitants aux outils numériques.
             - Sensibilisation à la cybersécurité et à la protection des données.

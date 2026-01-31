@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from pages import home, about, skills, projects, contact, verification
 import os
 # Configuration de la page
@@ -11,12 +12,12 @@ with open(css_file) as f:
 
 # Définir les pages
 pages = [
-    st.Page(home.home_show, title="Home", icon="🏠", default=True),  # Page par défaut
-    st.Page(about.about_show, title="About", icon="📘"),
-    st.Page(skills.skills_show, title="Skills", icon="💡"),
-    st.Page(projects.projects_show, title="Projects", icon="🚀"),
-    st.Page(contact.contact_show, title="Contact", icon="📧"),
-    st.Page(verification.verification_show, title="Verification", icon="🔒"),
+    st.Page(home.home_show, title="Accueil",  default=True),  # Page par défaut
+    st.Page(about.about_show, title="A propos de moi", ),
+    st.Page(skills.skills_show, title="Mes competences", ),
+    st.Page(projects.projects_show, title="Mes projects", ),
+    st.Page(contact.contact_show, title="Me contacter", ),
+    st.Page(verification.verification_show, title="Verification", ),
 ]
 
 # Créer la navigation

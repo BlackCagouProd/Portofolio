@@ -6,7 +6,10 @@ body{
     font-size: 40px;
 }
 
-
+#thm-badge {
+    width: 100%;
+    height: auto;
+}
 /* Style pour les titres */
 h1 {
     color: #2E86C1;
