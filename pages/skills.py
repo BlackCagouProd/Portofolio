@@ -32,7 +32,7 @@ def skills_show():
                 'DevOps',
                 'Cloud'
             ]
-            values = [5, 5, 4, 4, 4, 3, 4, 3]
+            values = [4, 5, 4, 3, 3, 4, 3, 3]
 
             fig = go.Figure(data=go.Scatterpolar(
                 r=values,

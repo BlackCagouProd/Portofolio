@@ -55,8 +55,7 @@ def home_show():
         st.markdown("""
             <div style='text-align: center; line-height: 1.8;'>
                 <p style='font-size: 1.1em;'>
-                    Spécialisé en cybersécurité et développement logiciel, je conçois des solutions 
-                    techniques robustes qui allient performance, sécurité et conformité réglementaire. 
+                    Spécialisé en cybersécurité et développement applicatif, j'allie performance, sécurité et conformité réglementaire. 
                     Mon approche combine expertise technique, maîtrise des frameworks de gouvernance 
                     et vision globale des enjeux numériques.
                 </p>
@@ -68,7 +67,7 @@ def home_show():
     # Domaines d'expertise
     st.markdown("<h2 style='text-align: center; margin-bottom: 2em;'>Domaines d'Expertise</h2>", unsafe_allow_html=True)
     
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
     
     with col1:
         st.markdown("""
@@ -90,7 +89,7 @@ def home_show():
         st.markdown("""
             <div style='padding: 2em; border-left: 3px solid #1f77b4;'>
                 <h3>Infrastructure</h3>
-                <p>Administration système, gestion de bases de données, architecture réseau</p>
+                <p>Administration système, gestion de bases de données, architecture réseau et cloud </p>
             </div>
         """, unsafe_allow_html=True)
     
@@ -115,7 +114,7 @@ def home_show():
                 <ul style='margin-top: 1em; line-height: 2;'>
                     <li>EBIOS Risk Manager - Méthode d'analyse et de gestion des risques</li>
                     <li>MEHARI - Méthode harmonisée d'analyse des risques</li>
-                    <li>MAGERIT - Méthodologie d'analyse et de gestion des risques</li>
+                    <li>MAGERIT - Méthodologie Espagnol d'analyse et de gestion des risques</li>
                     <li>Normes ISO 27001/27005 - Systèmes de management de la sécurité</li>
                     <li>RGPD - Protection des données personnelles</li>
                 </ul>
