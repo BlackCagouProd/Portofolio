@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from pages import home, about, skills, projects, contact, verification
+from pages import home, about, skills, projects,banksy, contact, verification
 import os
 # Configuration de la page
 st.set_page_config(page_title="Mon Portfolio", layout="wide")
@@ -16,8 +16,9 @@ pages = [
     st.Page(about.about_show, title="A propos de moi", ),
     st.Page(skills.skills_show, title="Mes competences", ),
     st.Page(projects.projects_show, title="Mes projects", ),
-    st.Page(contact.contact_show, title="Me contacter", ),
-    st.Page(verification.verification_show, title="Verification", ),
+    st.Page(banksy.banksy_show,title="Banksy",),
+    # st.Page(contact.contact_show, title="Me contacter", ),
+    # st.Page(verification.verification_show, title="Verification", ),
 ]
 
 # Créer la navigation

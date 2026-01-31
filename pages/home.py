@@ -89,18 +89,12 @@ def home_show():
     with col3:
         st.markdown("""
             <div style='padding: 2em; border-left: 3px solid #1f77b4;'>
-                <h3>Gouvernance</h3>
-                <p>Conformité réglementaire, gestion des risques, méthodologies EBIOS, MEHARI, MAGERIT</p>
-            </div>
-        """, unsafe_allow_html=True)
-    
-    with col4:
-        st.markdown("""
-            <div style='padding: 2em; border-left: 3px solid #1f77b4;'>
                 <h3>Infrastructure</h3>
                 <p>Administration système, gestion de bases de données, architecture réseau</p>
             </div>
         """, unsafe_allow_html=True)
+    
+    
     
     st.markdown("<br><br>", unsafe_allow_html=True)
     

@@ -12,6 +12,23 @@ def about_show():
     
     st.markdown("<br>", unsafe_allow_html=True)
     
+    # Présentation courte
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.markdown("""
+            <div style='text-align: center; padding: 1.5em; border-left: 3px solid #1f77b4; border-right: 3px solid #1f77b4;'>
+                <h2 style='margin: 0;'>Clément Wahaga</h2>
+                <p style='margin: 0.5em 0; font-size: 1.1em; color: #aaa;'>
+                    35 ans | Originaire de Nouvelle-Calédonie
+                </p>
+                <p style='margin: 0.5em 0; color: #1f77b4;'>
+                    Étudiant Ingénieur en Cybersécurité
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+    
     # Introduction
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
@@ -71,18 +88,6 @@ def about_show():
          "Constructeur Professionnel Voirie et Réseaux", "left"),
     ]
     
-    # Conteneur de la timeline
-    st.markdown("""
-        <style>
-        .timeline-container {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-        </style>
-    """, unsafe_allow_html=True)
-    
     for year, title, company, desc, align in timeline_data:
         if align == "left":
             col1, col2, col3 = st.columns([0.45, 0.1, 0.45])
@@ -109,7 +114,7 @@ def about_show():
             with col3:
                 st.markdown("<div style='height: 120px;'></div>", unsafe_allow_html=True)
                 
-        else:  # right
+        else:
             col1, col2, col3 = st.columns([0.45, 0.1, 0.45])
             
             with col1:
